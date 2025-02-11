@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import shrowd.api.dto.request.LoginRequest;
 import shrowd.api.dto.request.RegisterRequest;
+import shrowd.api.dto.response.TokenResponse;
 import shrowd.api.service.AuthService;
 
 @RestController
@@ -20,9 +21,9 @@ public class AuthController {
     private final AuthService authService;
 
     @PostMapping("/signin")
-    public ResponseEntity<String> login(@Valid @RequestBody LoginRequest request) {
+    public ResponseEntity<TokenResponse> login(@Valid @RequestBody LoginRequest request) {
         authService.validateCredentials(request.email(), request.password());
-        String jwtToken = authService.getJwtToken(request.email());
+        TokenResponse jwtToken = new TokenResponse(authService.getJwtToken(request.email()));
 
         return new ResponseEntity<>(jwtToken, HttpStatus.OK);
     }
