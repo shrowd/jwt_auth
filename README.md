@@ -130,19 +130,20 @@ security.jwt.token.expiration-time=${JWT_EXPIRATION_TIME}
 
 ### Login Screen
 Authenticate with email and password.
-![Image](https://github.com/user-attachments/assets/43552dd9-fd96-420e-a72c-41dba0efe5f8)
+![Image](https://github.com/user-attachments/assets/2ef7df31-e065-490e-8c85-b67158f48cc2)
 
 ### Registration Screen
 Create a new account with form validation.
-![Image](https://github.com/user-attachments/assets/d628df14-b510-4239-b811-a836653df2f3)
+![Image](https://github.com/user-attachments/assets/4f32c79d-7334-4272-895c-885012317be8)
 
 ### Admin View
 Access admin dashboard.
-![Image](https://github.com/user-attachments/assets/b7db9596-f3fd-4355-a541-1a8c87a0abed)
+![Image](https://github.com/user-attachments/assets/bdd33b96-50b6-4750-921c-ee34984b00fb)
 
 ### User View
 Access user dashboard.
-![Image](https://github.com/user-attachments/assets/69cfd30d-0c76-4fd4-b8dd-991f3fd26110)
+![Image](https://github.com/user-attachments/assets/3a570c21-6db7-4cca-b96b-9e161e4633db)
+
 ## API Endpoints
 
 | Method | Endpoint | Description | Authentication |
